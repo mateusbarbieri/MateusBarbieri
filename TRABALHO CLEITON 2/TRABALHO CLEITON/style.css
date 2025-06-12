@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .background {
+    background: url('/images/background.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #c90000;
+  }
+  
+  .login-box h1 span {
+    color: #e06d6d;
+  }
+  
+  .profile-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c90000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    
+  }
+  
+  .login-box .logo {
+    width: 80px;
+    margin-top: 20px;
+  }
+  .input-icon {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .input-icon input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-icon img {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+  }
+  .login-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #c90000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* espaço entre texto e # */
+  }
+  
+  .login-box h1 span {
+    font-size: 48px;     /* aumenta o tamanho do # */
+    color: #e06d6d;       /* cor mais clara como na imagem */
+    font-weight: bold;
+    line-height: 1;
+  }
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>20 Atividades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logouni.png" alt="Logo">
+        </div>
+
+        <div class="title">
+            ATIVIDADES
+        </div>
+
+        <div class="user">
+            <img src="images/user.png" alt="User Avatar">
+        </div>
+    </header>
+<div class="container">
+    <div class="sidebar">
+        <h2>Atividades</h2>
+        <ul>
+            <li><a href="#" data-url="atividades/jogo-da-memoria/index.html">Jogo da Memoria</a></li>
+            <li><a href="#" data-url="atividades/jogo-de-adivinhacao/index.html">Jogo de Adivinhação</a></li>
+            <li><a href="#" data-url="atividades/lista-de-compras/index.html">Lista de Compras</a></li>
+            <li><a href="#" data-url="atividades/simulador-de-caixa-eletronico/index.html">Simulador de Caixa Eletronico</a></li>
+            <li><a href="#" data-url="atividades/sorteador-de-nomes/index.html">Sorteador de Nomes</a></li>
+            <li><a href="#" data-url="atividades/to-do-list/index.html">To Do List</a></li>
+            <li><a href="#" data-url="atividades/verificação-de-numeros-primos/index.html">Verificação de Numeros Primos</a></li>
+            <li><a href="#" data-url="atividades/controle-de-visibilidade/index.html">Controle de Visibilidade</a></li>
+            <li><a href="#" data-url="atividades/quizz/index.html">Quizz</a></li>
+            <li><a href="#" data-url="atividades/galeria-de-fotos/index.html">Galeria de Fotos</a></li>
+            <li><a href="#" data-url="atividades/simulador-de-caixa-eletronico/index.html">Simulador de Caixa Eletronico</a></li>
+            <li><a href="#" data-url="atividades/validar-senha-forte/index.html">Validador de Senha</a></li>
+            <li><a href="#" data-url="atividades/editor-de-texto/index.html">Editor de Texto</a></li>
+            <li><a href="#" data-url="atividades/cronometro/index.html">Cronometro</a></li>
+            <li><a href="#" data-url="atividades/jogo-da-velha/index.html">Jogo da Velha</a></li>
+            <li><a href="#" data-url="atividades/tabuada/index.html">Tabuada</a></li>
+            <li><a href="#" data-url="atividades/calculadora-imc/index.html">Calculadora de Imc</a></li>
+            <li><a href="#" data-url="atividades/contador-regressivo/index.html">Contador Regressivo</a></li>
+            <li><a href="#" data-url="atividades/conversor-de-temperatura/index.html">Conversor de Temperatura</a></li>
+            <li><a href="#" data-url="atividades/calculadora-media/index.html">Calculadora Média</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <iframe id="atividade-frame" src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    const links = document.querySelectorAll('.sidebar a');
+    const iframe = document.getElementById('atividade-frame');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = this.getAttribute('data-url');
+            iframe.src = url;
+        });
+    });
+</script>
+
+</body>
+</html>

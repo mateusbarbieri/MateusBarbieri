@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Galeria de Imagens</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="natureza">Natureza</button>
+            <button class="filter-btn" data-filter="tecnologia">Tecnologia</button>
+            <button class="filter-btn" data-filter="pessoas">Pessoas</button>
+        </div>
+        
+        <div class="gallery">
+            <div class="image-item" data-category="natureza">
+                <img src="https://source.unsplash.com/random/300x200/?nature" alt="Natureza">
+            </div>
+            <div class="image-item" data-category="tecnologia">
+                <img src="https://source.unsplash.com/random/300x200/?technology" alt="Tecnologia">
+            </div>
+            <div class="image-item" data-category="pessoas">
+                <img src="https://source.unsplash.com/random/300x200/?people" alt="Pessoas">
+            </div>
+            <div class="image-item" data-category="natureza">
+                <img src="https://source.unsplash.com/random/300x200/?forest" alt="Floresta">
+            </div>
+            <div class="image-item" data-category="tecnologia">
+                <img src="https://source.unsplash.com/random/300x200/?computer" alt="Computador">
+            </div>
+            <div class="image-item" data-category="pessoas">
+                <img src="https://source.unsplash.com/random/300x200/?portrait" alt="Retrato">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

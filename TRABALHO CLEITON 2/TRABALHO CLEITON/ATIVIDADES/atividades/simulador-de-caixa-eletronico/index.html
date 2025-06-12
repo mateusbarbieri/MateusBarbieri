@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Caixa Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Simulador de Caixa Eletrônico</h1>
+            <div class="input-group">
+                <input type="number" id="valorSaque" min="1" step="1" placeholder="Digite o valor">
+                <button id="btnSacar">Sacar</button>
+            </div>
+            <div id="feedback" class="feedback-hidden"></div>
+        </div>
+
+        <div id="resultado" class="resultado-hidden">
+            <h2>Você receberá:</h2>
+            <div id="notas-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
